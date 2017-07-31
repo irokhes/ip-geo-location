@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 // require request-ip and register it as middleware
 var requestIp = require('request-ip');
+var geoip = require('geoip-lite');
 
 app.use(requestIp.mw())
 
